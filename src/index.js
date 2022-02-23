@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const data ={
+  counters: 5
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App data={data} />,
   </React.StrictMode>,
   document.getElementById('root')
 );
