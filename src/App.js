@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Header from "./Header"
+import Header from "./Header";
 import CounterList from "./CounterList";
 
 class App extends Component {
@@ -11,21 +11,21 @@ class App extends Component {
     };
   }
 
-increaseCounter = () => {
-  let plusCounter = this.state.counters + 1;
+  increaseCounter = () => {
+    let plusCounter = this.state.counters + 1;
   
-  this.setState({
-    counters: plusCounter,
-  })
-}
-
-decreaseCounter = () => {
-  let minusCounter = this.state.counters - 1;
-
-  this.setState({
-    counters: minusCounter,
-  })
-}
+    this.setState({
+      counters: plusCounter,
+    })
+  }
+  
+  decreaseCounter = () => {
+    let minusCounter = this.state.counters - 1;
+  
+    this.setState({
+      counters: minusCounter,
+    })
+  }
 
   render () {
     return (
@@ -33,6 +33,7 @@ decreaseCounter = () => {
         <Header plusCounter = {this.increaseCounter} minusCounter = {this.decreaseCounter}/>
         <div>
           <CounterList counter = {this.state.counters} />
+          {/* <CounterList counter = {this.props.data.counters} /> */}
         </div>
         
       </div>

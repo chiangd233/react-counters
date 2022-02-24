@@ -5,13 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const data ={
-  counters: 5
+  counters: 0
 }
 
 ReactDOM.render(
-  <React.StrictMode>
     <App data={data} />,
-  </React.StrictMode>,
   document.getElementById('root')
 );
 

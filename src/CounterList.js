@@ -1,14 +1,14 @@
-import React, {Component} from "react";
-import Counter from "./Counter"
+import React, { Component } from "react";
+import Counter from "./Counter";
 
 class CounterList extends Component {
-    render () {
-        let counter = [];
-        for (let index = 0; index < this.props.counters; index++) {
-            counter.push(<Counter />);
-        }
-        return <div className = "Counter-row">{counter}</div>
+  render() {
+    let counters = [];
+    for (let index = 0; index < this.props.counter; index++) {
+      counters.push(<Counter />);
     }
+    return <div className="Counter-row">{counters}</div>;
+  }
 }
 
 export default CounterList;
